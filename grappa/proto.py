@@ -42,7 +42,6 @@ class Node:
                 pref.append(ch.lower())
 
         m = hashlib.md5()
-        print (self.title)
         m.update(bytes(self.title, "utf-8"))
 
         # TODO: use z-base-32 here instead of base64
