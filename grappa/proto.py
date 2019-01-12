@@ -113,7 +113,7 @@ if __name__ == "__main__":
             node_id = insert_unique(nodes, Node(title))
             print(" > new node: {}".format(node_id))
         elif args[0] == Keywords.EDGE:
-            if not verify_args(args, 4):
+            if not verify_args(args, 3):
                 continue
             src = args[1]
             if not verify_node_exists(src, nodes):
